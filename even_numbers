@@ -1,0 +1,10 @@
+numbers = input().split()
+
+def filter(numbers):
+    even_numbers = []
+    for number in numbers:
+        current_number = int(number)
+        if current_number % 2 == 0:
+            even_numbers.append(current_number)
+    return even_numbers
+print(filter(numbers))
